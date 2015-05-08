@@ -1,0 +1,222 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body,html {
+	line-height: 1;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+	*cursor: default;
+	font: 16px/1.5 "Microsoft YaHei", Helvetica, STHeiti STXihei, Microsoft JhengHei, Arial;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/cj-bg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.jigsaw {
+  display: none;
+  background-image: url(images/js-logo.png);
+  background-size: contain;
+  width: 62%;
+  -webkit-perspective: 200;
+          perspective: 200;
+  padding-bottom: 55.83246073%;
+  position: relative;
+  margin: 53% auto 0;
+}
+.jigsaw .shadow {
+  opacity: 0;
+  left: -9.16230366%;
+  position: absolute;
+  width: 129.31937173%;
+  padding-bottom: 107.06806283%;
+  background-image: url(images/shadow.png);
+  background-size: contain;
+}
+.lets-joy {
+  opacity: 0;
+  position: relative;
+  width: 36.35602094%;
+  padding-bottom: 14.28272251%;
+  margin: 0 auto;
+  background-image: url("images/cj-lets-joy.png");
+  background-size: contain;
+}
+.join-us {
+  display: block;
+  opacity: 0;
+  background-image: url("images/join-us.png");
+  background-size: contain;
+  position: relative;
+  width: 76.60732984%;
+  padding-bottom: 11.84816754%;
+  margin: 6% auto 0;
+}
+.part {
+  display: none;
+  position: absolute;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+}
+.part1 {
+  /* @width: extract(extract(@sizes, @i),1);
+  	@height: extract(extract(@sizes, @i),2); */
+  width: 34.29319372%;
+  padding-bottom: 27.7486911%;
+  background-image: url("images/part1.png");
+}
+.part2 {
+  /* @width: extract(extract(@sizes, @i),1);
+  	@height: extract(extract(@sizes, @i),2); */
+  width: 29.58115183%;
+  padding-bottom: 34.81675393%;
+  background-image: url("images/part2.png");
+}
+.part3 {
+  /* @width: extract(extract(@sizes, @i),1);
+  	@height: extract(extract(@sizes, @i),2); */
+  width: 34.55497382%;
+  padding-bottom: 27.7486911%;
+  background-image: url("images/part3.png");
+}
+.part4 {
+  /* @width: extract(extract(@sizes, @i),1);
+  	@height: extract(extract(@sizes, @i),2); */
+  width: 26.43979058%;
+  padding-bottom: 45.81151832%;
+  background-image: url("images/part4.png");
+}
+.part5 {
+  /* @width: extract(extract(@sizes, @i),1);
+  	@height: extract(extract(@sizes, @i),2); */
+  width: 26.96335079%;
+  padding-bottom: 44.76439791%;
+  background-image: url("images/part5.png");
+}
+.part6 {
+  /* @width: extract(extract(@sizes, @i),1);
+  	@height: extract(extract(@sizes, @i),2); */
+  width: 34.03141361%;
+  padding-bottom: 26.17801047%;
+  background-image: url("images/part6.png");
+}
+.part7 {
+  /* @width: extract(extract(@sizes, @i),1);
+  	@height: extract(extract(@sizes, @i),2); */
+  width: 29.58115183%;
+  padding-bottom: 33.76963351%;
+  background-image: url("images/part7.png");
+}
+.part8 {
+  /* @width: extract(extract(@sizes, @i),1);
+  	@height: extract(extract(@sizes, @i),2); */
+  width: 34.55497382%;
+  padding-bottom: 26.17801047%;
+  background-image: url("images/part8.png");
+}
+.part9 {
+  /* @width: extract(extract(@sizes, @i),1);
+  	@height: extract(extract(@sizes, @i),2); */
+  width: 35.34031414%;
+  padding-bottom: 34.81675393%;
+  background-image: url("images/part9.png");
+}
+.part2 {
+  left: 48.16753927%;
+}
+.part3 {
+  right: 0;
+}
+.part4 {
+  top: 35.1744186%;
+}
+.part5 {
+  right: 0;
+  top: 16.86046512%;
+}
+.part6 {
+  bottom: 0;
+}
+.part7 {
+  bottom: 0;
+  left: 21.20418848%;
+}
+.part8 {
+  bottom: 18.31395349%;
+  right: 0;
+}
+.part9 {
+  bottom: -3.48837209%;
+  right: -19.63350785%;
+}
+.example_module.blue {
+  background: #cccccc;
+}
+.example_module.red {
+  background: #cccccc;
+}
+.example_module.green {
+  background: #cccccc;
+}
