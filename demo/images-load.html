@@ -1,0 +1,51 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Document</title>
+	<style>
+		body{
+			background-color: black;
+			height: 100%;
+		}
+		img{
+			border: 5px solid white;
+			max-width: 20%;
+			box-sizing: border-box;
+		}
+		.container>div{
+			height: 30%;
+		}
+		.child1{
+			background-color: cyan;
+		}
+		.child2{
+			background-color: teal;
+		}
+		.child3{
+			background-color: #012c3f;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="child1">
+			<p>这个例子很棒，可以看到preload配合promise后的灵活和强大</p>
+			<p>需要以server模式运行</p>
+			<p>需要精通promise。推荐文章http://www.html5rocks.com/en/tutorials/es6/promises/</p>
+		</div>
+		<div class="child2">
+			<p>如果不想深入研究，只需要掌握Promise.resolve(Preload(arr))会成为一个promise即可</p>
+		</div>
+		<div class="child3"></div>		
+	</div>
+	
+</body>
+
+<script src="vendor/es6-promise.js"></script>
+<script src="vendor/zepto.min.js"></script>
+<script src="../preload.js"></script>
+<script src="js/images-load.js"></script>
+
+</html>

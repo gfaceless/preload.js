@@ -5,7 +5,6 @@ Features
 * 预加载 + 加载后回调
 * `thennable`，可以直接被浏览器内置`Promise`使用
 * 可以判断失败
-* 只支持图片
 
 API
 -------
@@ -18,6 +17,14 @@ Preload(["some", "image", "urls"])
 	maybeLogYourError();
 });
 ```
+ES6内置`promise`的支持，因为`Preload()`返回的是`thenable`，可以用
+`Promise.resolve(Preload(arr))`来得到真正的`promise`
+在实际使用中，我们会用一些`promise`的`polyfill`
+
+NOTE
+------
+* 虽然名字叫的很广，但只支持图片。
+* 低版本的浏览器如IE8需要es-5的shim。当然pc端不推荐使用本库
 
 Background
 ----------

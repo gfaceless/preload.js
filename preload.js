@@ -36,13 +36,13 @@
 		this.loadedImages++
 		if (this.loadedImages == this.images.length) {
 			this._loaded = true;
-			this.done(noop);
+			this.done();
 		}
 	};
 	Preload.prototype._onerror = function() {		
 		if (this._failed) return;
 		this._failed = true;
-		this.fail(noop);
+		this.fail();
 	};
 
 	thenable(Preload);
@@ -50,7 +50,7 @@
 	// TODO: unify this? (actually the following snippet is the same as the one in `sound.js`)
 	function thenable(obj) {
 		function then(done, fail) {
-
+			var self = this;
 			// TODO: think of a better way to organize these two:
 			this._dones = this._dones || [];
 			this._fails = this._fails || [];
@@ -60,7 +60,7 @@
 
 			if (this._loaded) {
 				this._dones.forEach(function (done, i) {
-					done();
+					done(self.images);
 				});
 				this._dones = [];
 				return;
