@@ -7,8 +7,9 @@ for(var i=0;i<9;i++){
 	arr.push("images/part" + (i+1) + ".png")
 }
 
-// 类似jquery deferred的接口，未来可能会改成promise thenable的api
-preload(arr)
+// 类似jquery deferred的api, thennable。需要复杂的控制可以传至Promise.resolve()或Promise.all()
+// 支持二维数组
+Preload([arr, "images/cj-bg.jpg", "images/js-logo.png"])
 .done(function() {
 	startApp();
 })
