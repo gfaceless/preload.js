@@ -3,7 +3,7 @@ Preload.js (v0.0.2)
 Features
 --------
 * 预加载 + 加载后回调
-* `thennable`，可以直接被浏览器内置`Promise`使用
+* `thenable`，可以直接被浏览器内置`Promise`使用
 * 可以判断失败
 
 API
@@ -18,8 +18,12 @@ Preload(["some", "image", "urls"])
 });
 ```
 ES6内置`promise`的支持，因为`Preload()`返回的是`thenable`，可以用
-`Promise.resolve(Preload(arr))`来得到真正的`promise`
-在实际使用中，我们会用一些`promise`的`polyfill`
+```javascript
+Promise.resolve(Preload(arr))
+```
+来得到真正的`promise`。
+
+当然在实际使用中，我们会用一些`promise`的polyfill
 
 NOTE
 ------

@@ -52,6 +52,7 @@ var p1 = Preload(genSrcArr())
 
 Promise.resolve(p1).then(function(images) {
 	$('.child1').append(images);
+	$('.loading').remove();
 }, function() {
 	alert('some image was broken! (but we still continue)');
 

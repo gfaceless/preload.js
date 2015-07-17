@@ -1,0 +1,16 @@
+{
+  "name": "preloadjs",
+  "main": "preload.js",
+  "version": "0.0.2",
+  "authors": [
+    "giggle2016@gmail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
